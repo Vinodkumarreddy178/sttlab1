@@ -1,0 +1,65 @@
+import pandas as pd
+from radon.complexity import cc_visit
+from radon.metrics import mi_visit
+from multiprocessing import Pool, cpu_count
+from tqdm import tqdm
+
+# ----------------------------
+# FILE PATHS
+# ----------------------------
+INPUT_FILE = "/Users/vinodkumarreddy/Desktop/cs-202/cs202-lab/outputs/diff_analysis.csv"
+OUTPUT_FILE = "/Users/vinodkumarreddy/Desktop/cs-202/ass3/structural_metrics_sample100.csv"
+
+# ----------------------------
+# LOAD DATASET
+# ----------------------------
+data = pd.read_csv(INPUT_FILE)
+data.columns = data.columns.str.strip()
+
+# Use only first 100 commits for analysis
+data = data.head(100)
+
+# ----------------------------
+# METRIC CALCULATION FUNCTION
+# ----------------------------
+def extract_metrics(record):
+    def safe_eval(code_snippet):
+        if not isinstance(code_snippet, str) or code_snippet.strip() == "":
+            return 0, 0, 0
+        try:
+            mi_val = mi_visit(code_snippet, True)
+            cc_val = sum(obj.complexity for obj in cc_visit(code_snippet))
+            loc_val = len(code_snippet.splitlines())
+        except Exception:
+            mi_val, cc_val, loc_val = 0, 0, 0
+        return mi_val, cc_val, loc_val
+
+    mi_old, cc_old, loc_old = safe_eval(record["Source Code (before)"])
+    mi_new, cc_new, loc_new = safe_eval(record["Source Code (current)"])
+    return mi_old, mi_new, cc_old, cc_new, loc_old, loc_new
+
+# ----------------------------
+# PARALLEL EXECUTION
+# ----------------------------
+all_results = []
+with Pool(cpu_count()) as workers:
+    for outcome in tqdm(workers.imap(extract_metrics, [row for _, row in data.iterrows()]),
+                        total=len(data), desc="Analyzing Structural Metrics"):
+        all_results.append(outcome)
+
+# ----------------------------
+# SAVE RESULTS INTO DATAFRAME
+# ----------------------------
+(data["MI_Old"], data["MI_New"],
+ data["CC_Old"], data["CC_New"],
+ data["LOC_Old"], data["LOC_New"]) = zip(*all_results)
+
+# Compute metric changes
+data["MI_Diff"] = data["MI_New"] - data["MI_Old"]
+data["CC_Diff"] = data["CC_New"] - data["CC_Old"]
+data["LOC_Diff"] = data["LOC_New"] - data["LOC_Old"]
+
+# Save output file
+data.to_csv(OUTPUT_FILE, index=False)
+print(f"Structural metrics (first 100 rows) saved to: {OUTPUT_FILE}")
+
