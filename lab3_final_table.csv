@@ -1,0 +1,180 @@
+Hash,Message,Filename,MI_Change,CC_Change,LOC_Change,Semantic_Similarity,Token_Similarity,Semantic_class,Token_class,Classes_Agree
+3da6370a654b20cd90cd1bf492cd032c57e177b2,"use defaults better, improve/fix setup.py",bin/ansible,0.0,0,0,0.9999116659164428,0.9311672729668272,Minor,Minor,YES
+3da6370a654b20cd90cd1bf492cd032c57e177b2,"use defaults better, improve/fix setup.py",lib/ansible/__init__.py,0.0,0,0,0.9997881650924684,0.6867305300206147,Minor,Major,NO
+3da6370a654b20cd90cd1bf492cd032c57e177b2,"use defaults better, improve/fix setup.py",setup.py,0.0,0,2,0.9956399202346802,0.7642078317234667,Minor,Minor,YES
+530e54b3e44becd9ad631a6500e4232ccadac1af,Fix multiprocessing pool usage and remove stackoverflow hack,README.md,0.0,0,0,0.9999997615814208,0.9713663442397086,Minor,Minor,YES
+530e54b3e44becd9ad631a6500e4232ccadac1af,Fix multiprocessing pool usage and remove stackoverflow hack,bin/ansible-inventory,0.0,0,0,0.5590871572494507,0.0,Major,Major,YES
+530e54b3e44becd9ad631a6500e4232ccadac1af,Fix multiprocessing pool usage and remove stackoverflow hack,lib/ansible/__init__.py,0.0,0,0,0.9998366832733154,0.9082747414821548,Minor,Minor,YES
+bd37864242907f780162e7af87506a5f450579bc,Comments and fixup on the dark/contacted code,lib/ansible/__init__.py,0.0,0,0,0.9998941421508788,0.8756736479692854,Minor,Minor,YES
+2fc109b47a1018e2b50c2a7151d41d38a26dbefd,Credit Tim for last patch.,AUTHORS.md,0.0,0,0,0.9986509680747986,0.7951179177912666,Minor,Minor,YES
+43f7dee2471d90e155bd8e0024855b6768e778c7,"Added rough sketch of what I want for playbook support.  Debug heavy at the moment
+as I figure out how logging/output might look.  A couple of major TODO features
+also listed in the file.",bin/ansible,0.0,0,0,1.0,0.9929921499221114,Minor,Minor,YES
+43f7dee2471d90e155bd8e0024855b6768e778c7,"Added rough sketch of what I want for playbook support.  Debug heavy at the moment
+as I figure out how logging/output might look.  A couple of major TODO features
+also listed in the file.",examples/playbook.yml,0.0,0,0,0.9969587326049804,0.6803357984559112,Minor,Major,NO
+43f7dee2471d90e155bd8e0024855b6768e778c7,"Added rough sketch of what I want for playbook support.  Debug heavy at the moment
+as I figure out how logging/output might look.  A couple of major TODO features
+also listed in the file.",lib/ansible/playbook.py,-91.79354420425844,-6,-74,0.9986579418182372,0.4092356434075415,Minor,Major,NO
+4caf9d274bd5b172e42b7be4b6f90818b85755fa,Fix tbielawa email in AUTHORS file,AUTHORS.md,0.0,0,0,0.9998078942298888,0.9506885335787996,Minor,Minor,YES
+b44ae0af90cf920212ee49bd11a5ec83dd681c74,applying indentation patch from skvidal,lib/ansible/playbook.py,0.0,0,0,0.9999998807907104,1.0,Minor,Minor,YES
+b44ae0af90cf920212ee49bd11a5ec83dd681c74,applying indentation patch from skvidal,lib/ansible/runner.py,0.0,0,0,0.9999513030052184,0.9846065822368292,Minor,Minor,YES
+b44ae0af90cf920212ee49bd11a5ec83dd681c74,applying indentation patch from skvidal,library/command,0.0,0,0,0.999518871307373,1.0,Minor,Minor,YES
+b44ae0af90cf920212ee49bd11a5ec83dd681c74,applying indentation patch from skvidal,library/copy,0.0,0,0,0.9998571872711182,1.0,Minor,Minor,YES
+b44ae0af90cf920212ee49bd11a5ec83dd681c74,applying indentation patch from skvidal,library/ohai,0.0,0,0,0.999912977218628,1.0,Minor,Minor,YES
+b44ae0af90cf920212ee49bd11a5ec83dd681c74,applying indentation patch from skvidal,library/ping,0.0,0,0,0.9957423210144044,1.0,Minor,Minor,YES
+b44ae0af90cf920212ee49bd11a5ec83dd681c74,applying indentation patch from skvidal,library/template,0.0,0,0,0.9996678829193116,1.0,Minor,Minor,YES
+d308254eaeefd86c494cc322459af131aa5428a7,"A basic service module with 'ensure' idempotence semantics.  Playbook updated to use service
+module vs command module for restarting.  May be some bugs and requires the service to implement 'status' -- and probably some better error handling (i.e. return JSON with ""failed"" element if failed).
+
+Improvements welcome.",examples/playbook.yml,0.0,0,0,0.9998252987861632,0.9369950402542914,Minor,Minor,YES
+d308254eaeefd86c494cc322459af131aa5428a7,"A basic service module with 'ensure' idempotence semantics.  Playbook updated to use service
+module vs command module for restarting.  May be some bugs and requires the service to implement 'status' -- and probably some better error handling (i.e. return JSON with ""failed"" element if failed).
+
+Improvements welcome.",lib/ansible/playbook.py,0.0,0,0,0.9999538660049438,0.9965120020714362,Minor,Minor,YES
+d308254eaeefd86c494cc322459af131aa5428a7,"A basic service module with 'ensure' idempotence semantics.  Playbook updated to use service
+module vs command module for restarting.  May be some bugs and requires the service to implement 'status' -- and probably some better error handling (i.e. return JSON with ""failed"" element if failed).
+
+Improvements welcome.",library/service,0.0,0,0,0.5642555952072144,0.0,Major,Major,YES
+deb71da91e8e2761482dabfee5d98198afb9884e,"trim md5sum string so it does not contain the filename
+
+also fix a bug/typo in the reporting from playbook",lib/ansible/playbook.py,0.0,0,0,1.0000001192092896,0.996818313213151,Minor,Minor,YES
+deb71da91e8e2761482dabfee5d98198afb9884e,"trim md5sum string so it does not contain the filename
+
+also fix a bug/typo in the reporting from playbook",library/copy,0.0,0,0,0.9995291233062744,0.9453194398324472,Minor,Minor,YES
+deb71da91e8e2761482dabfee5d98198afb9884e,"trim md5sum string so it does not contain the filename
+
+also fix a bug/typo in the reporting from playbook",library/template,0.0,0,0,0.99969220161438,0.9777259261726056,Minor,Minor,YES
+61d064d011b47c522d77ef736d6d67470fb0f977,"Fixed up KV munging in runner, misc fixes to copy, setup, and template modules",examples/playbook.yml,0.0,0,0,0.9992048144340516,0.9106868224360348,Minor,Minor,YES
+61d064d011b47c522d77ef736d6d67470fb0f977,"Fixed up KV munging in runner, misc fixes to copy, setup, and template modules",lib/ansible/playbook.py,0.0,0,0,1.0000001192092896,0.9499086794764464,Minor,Minor,YES
+61d064d011b47c522d77ef736d6d67470fb0f977,"Fixed up KV munging in runner, misc fixes to copy, setup, and template modules",lib/ansible/runner.py,0.0,0,0,1.0,0.9712352191112446,Minor,Minor,YES
+61d064d011b47c522d77ef736d6d67470fb0f977,"Fixed up KV munging in runner, misc fixes to copy, setup, and template modules",library/copy,0.0,0,0,0.9994826316833496,0.9736728431640584,Minor,Minor,YES
+61d064d011b47c522d77ef736d6d67470fb0f977,"Fixed up KV munging in runner, misc fixes to copy, setup, and template modules",library/setup,0.0,0,0,0.9998971223831176,0.9405441894619312,Minor,Minor,YES
+61d064d011b47c522d77ef736d6d67470fb0f977,"Fixed up KV munging in runner, misc fixes to copy, setup, and template modules",library/template,0.0,0,0,0.9999018907546996,0.9868891056239044,Minor,Minor,YES
+86bf871e0727f2777292c9be207a0534ab826aea,Fixup the naming of the docs.,Makefile,0.0,0,0,0.9999971389770508,0.9754238144469,Minor,Minor,YES
+86bf871e0727f2777292c9be207a0534ab826aea,Fixup the naming of the docs.,docs/man/man5/ansible-modules.5,0.0,0,0,0.5842382907867432,0.0,Major,Major,YES
+86bf871e0727f2777292c9be207a0534ab826aea,Fixup the naming of the docs.,docs/man/man5/ansible-modules.5.asciidoc,0.0,0,0,1.0,0.0,Minor,Major,NO
+b4fd0042f61c9164416e7336ec3195c1d1b35e39,"Fix up some wording/formatting in ansible-modyles.5. Also: Section 5 is for configuration, update the see-also to reflect this with respect to ansible-playbook.",docs/man/man5/ansible-modules.5,0.0,0,0,0.5816956162452698,0.0,Major,Major,YES
+b4fd0042f61c9164416e7336ec3195c1d1b35e39,"Fix up some wording/formatting in ansible-modyles.5. Also: Section 5 is for configuration, update the see-also to reflect this with respect to ansible-playbook.",docs/man/man5/ansible-modules.5.asciidoc,0.0,0,0,0.9999668598175048,0.9822459663318492,Minor,Minor,YES
+cdbc2168c117835a583ce2b73c2fc09277b47364,Fix makefile manpage targets,Makefile,0.0,0,0,0.9999964833259584,0.9754238144469,Minor,Minor,YES
+66127727110532ed943724904e79c4d82bb41874,"Update man pages. Fix formatting in playbook example. Also, YAML documents by definition start with '---', so I have added this to the example and the manpage",docs/man/man1/ansible.1,0.0,0,0,1.0000001192092896,0.9821037987069212,Minor,Minor,YES
+66127727110532ed943724904e79c4d82bb41874,"Update man pages. Fix formatting in playbook example. Also, YAML documents by definition start with '---', so I have added this to the example and the manpage",docs/man/man5/ansible-modules.5,0.0,0,0,1.0000001192092896,0.9951641713167846,Minor,Minor,YES
+66127727110532ed943724904e79c4d82bb41874,"Update man pages. Fix formatting in playbook example. Also, YAML documents by definition start with '---', so I have added this to the example and the manpage",docs/man/man5/ansible-playbook.5,0.0,0,0,0.9984623193740844,0.6134806958655906,Minor,Major,NO
+66127727110532ed943724904e79c4d82bb41874,"Update man pages. Fix formatting in playbook example. Also, YAML documents by definition start with '---', so I have added this to the example and the manpage",docs/man/man5/ansible-playbook.5.asciidoc,0.0,0,0,0.999853491783142,0.9922041693829003,Minor,Minor,YES
+66127727110532ed943724904e79c4d82bb41874,"Update man pages. Fix formatting in playbook example. Also, YAML documents by definition start with '---', so I have added this to the example and the manpage",examples/playbook.yml,0.0,0,0,0.9999653100967408,0.993398979229516,Minor,Minor,YES
+1a20b00d1f29d0079e81d2bbdd11a39ac9b18221,If the error is an authentication exception - just report it that way don't dump out an unappetizing traceback which just says the same,lib/ansible/runner.py,0.0,0,0,1.0,0.9858627497662524,Minor,Minor,YES
+bd7a71bb29d0fc26ed6fbae802018d06ddefc346,"implement manual multiprocessing pools for the runner.
+this fixes the ctrl-c not-working problem.
+
+implemented this solution: http://www.bryceboe.com/2010/08/26/python-multiprocessing-and-keyboardinterrupt/#georges
+
+also add hosts which do not get a chance to return results to the 'dark' results.",lib/ansible/runner.py,0.0,0,0,0.9977141618728638,0.9644765393419068,Minor,Minor,YES
+39f42cfd75305e5e2a893e54c0a20781be6231ae,when it is an IOError or an OSError - return a normal error message instead of a traceback barf,library/command,0.0,0,0,0.9977577924728394,0.8471483953962876,Minor,Minor,YES
+f32f5d5ac523d9d470c927a5fc2b8b7f94f1b7a1,Fix markdown bullets,README.md,0.0,0,0,0.9997605681419371,1.0,Minor,Minor,YES
+186dab4dff653b29d8e7fac19cba79e66179d0fc,"Include facter variables for free in setup JSON (prefix with 'facter'.
+
+Also sort keys in JSON file and pretty print",library/setup,0.0,0,0,0.995671272277832,0.633294408965291,Minor,Major,NO
+c8005e6c60973f565ac64dd2d9fc4f866f9d7fde,fix markdown links,README.md,0.0,0,0,1.0000001192092896,0.9877694107766416,Minor,Minor,YES
+03bf465c3afcc4befd92df84d48cde0873062ca4,attempt to fix asciidoc so it shows up on github,docs/man/man5/ansible-playbook.5.asciidoc,0.0,0,0,0.9999459385871888,0.9860352617346432,Minor,Minor,YES
+0321afb1e3c1802eb12f7107f68d3b6a00ea2cf2,"Minor error handling tweaks (yell if no args) for ansible-command and some minor
+style bits (underscores between compound words, use dest always in optparse)",bin/ans-command,0.0,0,0,0.9997684359550476,0.8828868384750729,Minor,Minor,YES
+0321afb1e3c1802eb12f7107f68d3b6a00ea2cf2,"Minor error handling tweaks (yell if no args) for ansible-command and some minor
+style bits (underscores between compound words, use dest always in optparse)",lib/ansible/scripts.py,0.0,0,0,0.999975085258484,0.9464508898181492,Minor,Minor,YES
+0321afb1e3c1802eb12f7107f68d3b6a00ea2cf2,"Minor error handling tweaks (yell if no args) for ansible-command and some minor
+style bits (underscores between compound words, use dest always in optparse)",setup.py,0.0,0,1,0.9998809099197388,0.954005815973756,Minor,Minor,YES
+7de661dd2cfc9b7584d6d5a0976c205df4425c81,"Add ansible command, fix import error in runner",bin/ans-playbook,90.9245657168732,3,52,0.5726710557937622,0.0,Major,Major,YES
+7de661dd2cfc9b7584d6d5a0976c205df4425c81,"Add ansible command, fix import error in runner",lib/ansible/runner.py,0.0,0,0,0.999901533126831,0.9958966468502564,Minor,Minor,YES
+7de661dd2cfc9b7584d6d5a0976c205df4425c81,"Add ansible command, fix import error in runner",library/command,0.0,0,0,0.9999476075172424,0.9321260909725392,Minor,Minor,YES
+c6eb3f1006a45e00df0ee10dcabea69e585ad052,remove debug statement,bin/ans-command,0.0,0,0,0.9999998807907104,0.9883423845114112,Minor,Minor,YES
+c6eb3f1006a45e00df0ee10dcabea69e585ad052,remove debug statement,setup.py,0.0,0,4,0.9982128143310548,0.8820568251238248,Minor,Minor,YES
+cc2d3e0f1aaadc3ec3592625f2413cbf589c0aaa,Fix my error from not removing this parameter,bin/ans-command,0.0,0,0,0.9998255372047424,0.9940722320705284,Minor,Minor,YES
+b9b0240543145e977903d2763b24a5832d5351db,"Continued ans-command output upgrades, fixed output_dest back again",bin/ans-command,0.0,0,0,0.9999999403953552,0.9335262592059694,Minor,Minor,YES
+42767b30fe0407fce20c82c30bee82887bd9e263,Fix output on failed hosts,bin/ans-command,0.0,0,0,0.9995123744010924,0.7291405011658756,Minor,Major,NO
+de1d0011bc7072b2176abff463b1bf1c062b0be0,"Take darkened hosts out of the playbook rotation, fix error handling in template
+module so that if a directory path is specified we get valid output",lib/ansible/playbook.py,0.0,0,0,0.9999998807907104,0.9903122086017668,Minor,Minor,YES
+de1d0011bc7072b2176abff463b1bf1c062b0be0,"Take darkened hosts out of the playbook rotation, fix error handling in template
+module so that if a directory path is specified we get valid output",library/template,0.0,0,0,1.0000001192092896,0.9592972915457458,Minor,Minor,YES
+d0906e187f05192c39694a188fd61d8f7dfc6788,Correct file location error in example,docs/man/man5/ansible-playbook.5.asciidoc,0.0,0,0,0.999996542930603,0.9932929677678928,Minor,Minor,YES
+19fdb7305ddcf7655b50fe2eb88b7bffea9fac89,have command module raise an error if no arguments are supplied,library/command,0.0,0,0,0.9995708465576172,0.9134458092570492,Minor,Minor,YES
+ab266472be140884a937572a9700730b23ead51d,Trim errors on connection refused messages,lib/ansible/runner.py,0.0,0,0,1.0,0.9885677992938016,Minor,Minor,YES
+c8b1bbc7eabb66134d44ff7a05d2ab2b27c80f86,"make command module error when no -a more obvious as command is the default module and someone
+may forget about -a.  The CLI already warns about no host pattern by pulling up usage.",library/command,0.0,0,0,0.9999647736549376,0.9667704164315064,Minor,Minor,YES
+e6a1acf756dcee1e23b6f0642563e2773fe7805d,"Let ""all"" be an alias for ""*"" in patterns, fix output bug on non-command execution, make clean now removes the build dir",Makefile,0.0,0,0,0.9996383190155028,0.961883028223314,Minor,Minor,YES
+e6a1acf756dcee1e23b6f0642563e2773fe7805d,"Let ""all"" be an alias for ""*"" in patterns, fix output bug on non-command execution, make clean now removes the build dir",bin/ansible,0.0,0,0,1.0,0.9947444291734236,Minor,Minor,YES
+e6a1acf756dcee1e23b6f0642563e2773fe7805d,"Let ""all"" be an alias for ""*"" in patterns, fix output bug on non-command execution, make clean now removes the build dir",lib/ansible/runner.py,0.0,0,0,0.9999998211860656,0.9907112173887036,Minor,Minor,YES
+e6a1acf756dcee1e23b6f0642563e2773fe7805d,"Let ""all"" be an alias for ""*"" in patterns, fix output bug on non-command execution, make clean now removes the build dir",library/facter,0.0,0,0,1.0,0.0,Minor,Major,NO
+c57df6220bc71446349e20d527d77f1a386e8439,"Add pydoc to playbook binary, fix default types for playbook '.get()' call",bin/ansible-playbook,-1.1862091681238385,0,7,0.999314785003662,0.8777080680027387,Minor,Minor,YES
+c57df6220bc71446349e20d527d77f1a386e8439,"Add pydoc to playbook binary, fix default types for playbook '.get()' call",lib/ansible/playbook.py,0.0,0,0,0.9999998807907104,0.9943149129305996,Minor,Minor,YES
+6541f338dff3805881002c3f45a6dc0d27396505,"add pyflakes target & associated fixes.  Also decided to save JSON to --tree file so it can
+be better used programatically.  May have to come up with another system of tree logging for
+playbook if playbook decides to have tree logging.  Presumably not the highest priority.",Makefile,0.0,0,0,0.9998699426651,0.965132467366048,Minor,Minor,YES
+6541f338dff3805881002c3f45a6dc0d27396505,"add pyflakes target & associated fixes.  Also decided to save JSON to --tree file so it can
+be better used programatically.  May have to come up with another system of tree logging for
+playbook if playbook decides to have tree logging.  Presumably not the highest priority.",bin/ansible,0.0,0,0,0.9999999403953552,0.9888634803597528,Minor,Minor,YES
+6541f338dff3805881002c3f45a6dc0d27396505,"add pyflakes target & associated fixes.  Also decided to save JSON to --tree file so it can
+be better used programatically.  May have to come up with another system of tree logging for
+playbook if playbook decides to have tree logging.  Presumably not the highest priority.",lib/ansible/playbook.py,0.0,0,0,1.000000238418579,0.989932184779424,Minor,Minor,YES
+6541f338dff3805881002c3f45a6dc0d27396505,"add pyflakes target & associated fixes.  Also decided to save JSON to --tree file so it can
+be better used programatically.  May have to come up with another system of tree logging for
+playbook if playbook decides to have tree logging.  Presumably not the highest priority.",lib/ansible/runner.py,0.0,0,0,0.9999221563339232,0.9966829655008342,Minor,Minor,YES
+6541f338dff3805881002c3f45a6dc0d27396505,"add pyflakes target & associated fixes.  Also decided to save JSON to --tree file so it can
+be better used programatically.  May have to come up with another system of tree logging for
+playbook if playbook decides to have tree logging.  Presumably not the highest priority.",lib/ansible/utils.py,0.0,0,0,0.9999576807022096,0.981330539900964,Minor,Minor,YES
+e4304a0ac5ef777832a2f4db8899507d0d0dfacc,"Make sure tempdirs are cleaned up after execution steps, fix notifiers, make sure
+service module is installed by setup.py",examples/playbook.yml,0.0,0,0,0.9999669194221495,0.9525618205602056,Minor,Minor,YES
+e4304a0ac5ef777832a2f4db8899507d0d0dfacc,"Make sure tempdirs are cleaned up after execution steps, fix notifiers, make sure
+service module is installed by setup.py",lib/ansible/playbook.py,0.0,0,0,1.000000238418579,1.0,Minor,Minor,YES
+e4304a0ac5ef777832a2f4db8899507d0d0dfacc,"Make sure tempdirs are cleaned up after execution steps, fix notifiers, make sure
+service module is installed by setup.py",lib/ansible/runner.py,0.0,0,0,1.0000001192092896,0.946564325240285,Minor,Minor,YES
+e4304a0ac5ef777832a2f4db8899507d0d0dfacc,"Make sure tempdirs are cleaned up after execution steps, fix notifiers, make sure
+service module is installed by setup.py",setup.py,0.0,0,1,0.9995800852775574,0.9534460356445504,Minor,Minor,YES
+8e07d83ad1869407617d50d2c92e4de18b8450db,"Async module, mostly operational, daemonizing/watch code may have bugs",library/async_wrapper,0.0,0,0,0.99955815076828,0.7913519630541752,Minor,Minor,YES
+6a0b79357897e88fe1acddd657cb6641eb1d86cd,Remove debug comments,library/async_wrapper,0.0,0,0,1.0000001192092896,0.9563762644520368,Minor,Minor,YES
+c839229f54ab17df059eef3044d4ff593993a87a,Fix code formatting in README.md,README.md,0.0,0,0,0.9999998807907104,1.0,Minor,Minor,YES
+8d06c074b1f6b35aca7a3969481c88229a9078e6,"* Added uptime.py as an example of somewhat minimal API usage & reporting
+* Pattern in API now has a default
+* Fixed bug in template module operation detected from running playbook (tests for that pending)
+* Workaround for multiprocessing lib being harmlessly squeaky (feeder thread got sentinel)",examples/uptime.py,0.0,0,0,0.6001628041267395,0.0,Major,Major,YES
+8d06c074b1f6b35aca7a3969481c88229a9078e6,"* Added uptime.py as an example of somewhat minimal API usage & reporting
+* Pattern in API now has a default
+* Fixed bug in template module operation detected from running playbook (tests for that pending)
+* Workaround for multiprocessing lib being harmlessly squeaky (feeder thread got sentinel)",lib/ansible/constants.py,0.0,0,0,0.9999698400497437,0.9837380598312618,Minor,Minor,YES
+8d06c074b1f6b35aca7a3969481c88229a9078e6,"* Added uptime.py as an example of somewhat minimal API usage & reporting
+* Pattern in API now has a default
+* Fixed bug in template module operation detected from running playbook (tests for that pending)
+* Workaround for multiprocessing lib being harmlessly squeaky (feeder thread got sentinel)",lib/ansible/runner.py,0.0,0,0,0.999596357345581,0.9900122588316862,Minor,Minor,YES
+369b9cde1cc131c3d69f63a1d91467a77208bf3a,"Add test for template module and make 'dark' errors clearer if we get output back and the JSON
+is not parseable",lib/ansible/runner.py,0.0,0,0,1.000000238418579,0.98248455756098,Minor,Minor,YES
+c71afe35d649a8f3aa4db5a122a6723a84760ff3,Async tests complete.  Fixed bug in async_wrapper,library/async_wrapper,0.0,0,0,0.9999304413795472,0.9913203736542616,Minor,Minor,YES
+c71afe35d649a8f3aa4db5a122a6723a84760ff3,Async tests complete.  Fixed bug in async_wrapper,test/TestRunner.py,0.0,0,0,1.0,0.9500585736159648,Minor,Minor,YES
+b190ea4b62ad8cae5e4a54a094ba9d55e51b75ad,Fix parse_hosts to not blow up on ungrouped hosts.,lib/ansible/runner.py,0.0,0,0,1.000000238418579,0.9934143998429324,Minor,Minor,YES
+2b22f546a2ab0d0dfeacbdfc27d2d750a725215e,Fix the py[co] part of the clean target in the make file,Makefile,0.0,0,0,0.9999794960021972,0.983631575077218,Minor,Minor,YES
+eadd5644b0e40137dd7e4b8726382695681117f3,Fix project name from where I copied it from :),_layouts/default.html,0.0,0,0,0.9999325275421144,0.9161234304072556,Minor,Minor,YES
+f25b39b7ceea03cf2700a1bf5d4977da515b06db,"Switch to the 'Sphinx Bootstrap' Theme:
+https://github.com/ryan-roemer/sphinx-bootstrap-theme
+
+Fix some rst related formatting.",_themes/bootstrap/globaltoc.html,0.0,0,0,0.6114034056663513,0.0,Major,Major,YES
+f25b39b7ceea03cf2700a1bf5d4977da515b06db,"Switch to the 'Sphinx Bootstrap' Theme:
+https://github.com/ryan-roemer/sphinx-bootstrap-theme
+
+Fix some rst related formatting.",_themes/bootstrap/layout.html,0.0,0,0,0.5429370403289795,0.0,Major,Major,YES
+f25b39b7ceea03cf2700a1bf5d4977da515b06db,"Switch to the 'Sphinx Bootstrap' Theme:
+https://github.com/ryan-roemer/sphinx-bootstrap-theme
+
+Fix some rst related formatting.",_themes/bootstrap/localtoc.html,0.0,0,0,0.588657021522522,0.0,Major,Major,YES
+f25b39b7ceea03cf2700a1bf5d4977da515b06db,"Switch to the 'Sphinx Bootstrap' Theme:
+https://github.com/ryan-roemer/sphinx-bootstrap-theme
+
+Fix some rst related formatting.",_themes/bootstrap/relations.html,0.0,0,0,0.562789797782898,0.0,Major,Major,YES
+f25b39b7ceea03cf2700a1bf5d4977da515b06db,"Switch to the 'Sphinx Bootstrap' Theme:
+https://github.com/ryan-roemer/sphinx-bootstrap-theme
+
+Fix some rst related formatting.",_themes/bootstrap/searchbox.html,0.0,0,0,0.5905677676200867,0.0,Major,Major,YES
+f25b39b7ceea03cf2700a1bf5d4977da515b06db,"Switch to the 'Sphinx Bootstrap' Theme:
+https://github.com/ryan-roemer/sphinx-bootstrap-theme
+
+Fix some rst related formatting.",_themes/bootstrap/sourcelink.html,0.0,0,0,0.58768630027771,0.0,Major,Major,YES
+f25b39b7ceea03cf2700a1bf5d4977da515b06db,"Switch to the 'Sphinx Bootstrap' Theme:
+https://github.com/ryan-roemer/sphinx-bootstrap-theme
+
+Fix some rst related formatting.",_themes/bootstrap/static/bootstrap-dropdown.js,0.0,0,0,0.5816033482551575,0.0,Major,Major,YES
